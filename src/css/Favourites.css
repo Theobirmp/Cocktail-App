@@ -1,0 +1,92 @@
+.fav-cocktails-message {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.favourite-cocktails {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-column-gap: 1em;
+}
+
+.no-fav-cocktails-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-to-search-button {
+    background-color: var(--myBlue);
+    border-radius: 5%;
+    width: 30em;
+    height: 3em;
+    color: white;
+    margin-top: 3em;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 1.5em;
+}
+
+.add-favourite {
+    cursor: pointer;
+    height: 2.5em;
+    width: 75%;
+    border-radius: 5%;
+    background-color: var(--myRed)!important;
+    margin: 1em;
+    color: white;
+}
+
+.remove-favourite {
+    cursor: pointer;
+    width: 75%;
+    height: 2.5em;
+    border-radius: 5%;
+    background-color: var(--myBlue)!important;
+    margin: 1em;
+    color: white;
+}
+
+.no-fav-cocktails-message {
+    margin-top: 1.5em;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sad-face-image {
+    width: 50%;
+    height: 50%;
+    font-size: 7.5rem;
+    text-align: center;
+}
+
+.please-message {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .favourite-cocktails {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+}
+
+@media (min-width:1750px) {
+    .no-fav-cocktails-message {
+        font-size: 4rem;
+    }
+    .sad-face-image {
+        font-size: 10rem;
+    }
+    .please-message {
+        font-size: 3rem;
+    }
+    .fav-cocktails-message {
+        margin-top: 1.5rem;
+    }
+}

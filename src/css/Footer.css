@@ -1,0 +1,63 @@
+.footer {
+    background-color: var(--myBlue);
+    margin-top: 10rem;
+    position: relative;
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container {
+    height: 100%;
+    padding-top: 4rem;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 3.5rem;
+    color: white;
+    background: transparent;
+    border-style: solid;
+    border: 0px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.footer-item-label {
+    font-size: .75rem;
+    text-align: center;
+}
+
+.footer-message {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.display-none {
+    display: none;
+}
+
+.personal-info {
+    position: absolute;
+    margin-top: 10rem;
+    background: var(--myBlue);
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.info-email,
+.info-phone {
+    display: block;
+    font-size: 1.5rem;
+}

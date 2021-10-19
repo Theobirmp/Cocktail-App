@@ -1,24 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Nav from "./components/Nav"
+import Home from './pages/Home';
+import About from "./pages/About"
+import Favourites from './pages/Favourites';
+import { AppProvider } from "./components/AppContext";
+import CocktailPage from './pages/CocktailPage';
+import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppProvider>
+    <Router>
+      <Nav/>
+      <ScrollToTop />
+      <Switch>
+        <Route exact path="/">
+          <Home/>
+        </Route>
+        <Route exact path="/about">
+          <About/>
+        </Route>
+        <Route exact path="/cocktail/:cocktailName">
+          <CocktailPage/>
+        </Route>
+        <Route exact path="/favourites">
+          <Favourites/>
+        </Route>
+      </Switch>
+      <Footer/>
+    </Router>
+    </AppProvider>
   );
 }
 

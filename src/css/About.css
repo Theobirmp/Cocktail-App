@@ -1,0 +1,37 @@
+.about-container {
+    background-color: var(--myGrey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 75vw;
+    margin: 3rem auto;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1.5rem;
+    box-shadow: 4px 4px var(--myDarkPurple);
+}
+
+.about-title {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.about-paragraph {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+@media (max-width:600pxx) {
+    .about-container {
+        height: 40vh;
+    }
+}
+
+@media (min-width:1750px) {
+    .about-container {
+        min-height: 60vh;
+    }
+}

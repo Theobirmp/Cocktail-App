@@ -1,0 +1,23 @@
+.fav-drink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--myLightGray);
+    border-radius: 2rem;
+}
+
+.is-alcoholic {
+    font-size: 1em;
+}
+
+.instructions {
+    font-size: 1em;
+    text-align: center;
+}
+
+@media (min-width:1750px) {
+    .fav-drink {
+        margin-top: 5rem;
+    }
+}

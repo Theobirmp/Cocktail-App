@@ -1,0 +1,11 @@
+.no-drinks-found {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.no-text-decoration-link {
+    text-decoration: none;
+    color: var(--myDarkPurple)
+}
