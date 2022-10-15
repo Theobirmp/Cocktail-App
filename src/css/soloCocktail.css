@@ -1,0 +1,51 @@
+.main-ingredients {
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: underline;
+}
+.main-ingredients-ul {
+  list-style-type: none;
+  counter-set: ingredients-counter;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+.main-ingredients-ul > li::after {
+  content: counter(ingredients-counter);
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: solid 1px black;
+  border-radius: 50%;
+  width: 20px;
+  font-size: 15px;
+  aspect-ratio: 1;
+}
+.main-ingredients-ul > li {
+  counter-increment: ingredients-counter;
+  position: relative;
+}
+.ingredients-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.instructions-title {
+  margin-top: 0.5em;
+}
+.button-favourite {
+  text-transform: uppercase;
+  color: black;
+  font-size: 16px;
+  max-width: 100px;
+  border-radius: 100vmax;
+  border: none;
+  outline: none;
+  transition: all linear 250ms;
+}
+.button-favourite:hover {
+  opacity: 0.9;
+  color: white;
+  transform: scale(1.2);
+}
