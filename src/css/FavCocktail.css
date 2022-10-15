@@ -4,9 +4,9 @@
   align-items: center;
   justify-content: center;
   background-color: var(--myLightGray);
-  border-radius: 2rem;
   padding: 2em;
   max-width: 600px;
+  border-radius: 10px;
 }
 
 .is-alcoholic {

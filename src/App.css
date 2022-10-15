@@ -18,23 +18,23 @@
   padding: 0px;
   box-sizing: border-box;
 }
-
+img {
+  object-fit: cover;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .solo-drink {
-  /* width: 20em; */
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2em;
+  margin: 2em auto 0em;
   max-width: 600px;
   padding: 2em;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
 .drink-image {
-  height: 80%;
-  width: 80%;
-  margin-bottom: 1em;
-  margin-top: 1em;
-  max-width: 20em;
+  /* height: 80%; */
+  /* width: 80%; */
+  margin-bottom: 1.5em;
+  /* max-width: 20em; */
 }
 
 .link-text {
@@ -49,6 +49,8 @@
   font-weight: bold;
   letter-spacing: 0.1em;
   font-size: 3rem;
+  line-height: 3.5rem;
+  margin-top: 2rem;
 }
 
 .search-bar {
@@ -74,7 +76,7 @@
 }
 
 .red-border {
-  border: var(--myRed) solid 0.5em !important;
+  background-color: rgba(244, 11, 11, 0.1);
 }
 
 .coctkail-info {
@@ -97,7 +99,7 @@
 
 .cocktail-container {
   /*container for each cocktail on the home page*/
-  border-radius: 1rem;
+  border-radius: 4px;
   width: 100%;
   max-width: 20em;
   display: flex;
@@ -105,9 +107,8 @@
   justify-content: center;
   align-items: center;
   margin-top: 1em;
-  border: var(--myDarkGrey) solid 0.5em;
   margin-bottom: 1rem;
-  box-shadow: 0.3rem 0.5rem var(--myDarkPurple);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .display-none {
